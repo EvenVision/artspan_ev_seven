@@ -1,0 +1,15 @@
+
+
+------------------------- EV Seven Theme Patch Notes -------------------------
+--------------------------------  Abridged  ---------------------------------
+
+Version 1.0.1
+-----------------------------------------------------------------------------
+-UI Tweaks
+-Styles for drag and drop, 
+-Unified View/Edit tabs across Base & Seven
+-Added Responsive Updates to the Administration Menu
+
+Version 1.0.0
+-----------------------------------------------------------------------------
+-Modified for use as a launch point for sote-specific sub-themes, no more hacking!

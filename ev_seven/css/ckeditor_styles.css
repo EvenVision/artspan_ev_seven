@@ -1,0 +1,358 @@
+/**
+ * Table of Contents:
+ * (easily jump around by using crtl-F > section number)
+ *
+ * 1 - Default Styles
+ *
+ * 2 - Custom Styles
+ *
+ * ----------------------------------------------------------------------------
+**/
+
+/**
+ * 1 - Default Styles
+ * ----------------------------------------------------------------------------
+**/
+
+/* Indentations from Module */
+
+.rteindent1 {
+    margin-left: 40px;
+}
+.rteindent2 {
+    margin-left: 80px;
+}
+.rteindent3 {
+    margin-left: 120px;
+}
+.rteindent4 {
+    margin-left: 160px;
+}
+.rteleft {
+    text-align: left;
+}
+.rteright {
+    text-align: right;
+}
+.rtecenter {
+    text-align: center;
+}
+.rtejustify {
+    text-align: justify;
+}
+.ibimage_left {
+    float: left;
+}
+.ibimage_right {
+    float: right;
+}
+
+*,*:before,*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    /* Font */
+    font-family: sans-serif, Arial, Verdana, "Trebuchet MS";
+    font-size: 16px;
+    /* Text color */
+    color: #333;
+    /* Remove the background color to make it transparent */
+    background-color: #fff;
+    margin: 20px;
+}
+
+p {
+	max-width: 750px;
+	margin: 0 auto 15px;
+}
+
+.cke_editable {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+blockquote {
+    font-style: italic;
+    font-family: Georgia, Times, "Times New Roman", serif;
+    padding: 2px 0;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 0;
+}
+
+.cke_contents_ltr blockquote {
+    padding-left: 20px;
+    padding-right: 8px;
+    border-left-width: 5px;
+}
+
+.cke_contents_rtl blockquote {
+    padding-left: 8px;
+    padding-right: 20px;
+    border-right-width: 5px;
+}
+
+a {
+    color: #0782C1;
+}
+
+ol,
+ul,
+dl {
+    /* IE7: reset rtl list margin. (#7334) */
+    *margin-right: 0px;
+    /* preserved spaces for list items with text direction other than the list. (#6249,#8049)*/
+    padding: 0 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    line-height: 1.2;
+    max-width: 750px;
+    margin: 0 auto 15px;
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid #ccc;
+}
+
+img.right {
+    border: 1px solid #ccc;
+    float: right;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+img.left {
+    border: 1px solid #ccc;
+    float: left;
+    margin-right: 15px;
+    padding: 5px;
+}
+
+pre {
+    white-space: pre-wrap;
+    /* CSS 2.1 */
+    word-wrap: break-word;
+    /* IE7 */
+    -moz-tab-size: 4;
+    -webkit-tab-size: 4;
+    tab-size: 4;
+}
+
+.marker {
+    background-color: Yellow;
+}
+
+span[lang] {
+    font-style: italic;
+}
+
+figure {
+    text-align: center;
+    border: solid 1px #ccc;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    margin: 10px 20px;
+    display: inline-block;
+}
+
+figure > figcaption {
+    text-align: center;
+    display: block;
+    /* For IE8 */
+}
+
+a > img {
+    padding: 1px;
+    margin: 1px;
+    border: none;
+    outline: 1px solid #0782C1;
+}
+
+
+/**
+ * 2 - Custom Styles
+ * ----------------------------------------------------------------------------
+**/
+
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 5px;
+}
+
+h1 {
+	font-size: 3.998em;
+}
+
+h2 {
+	font-size: 2.827em;
+}
+
+h3 {
+	font-size: 1.999em;
+}
+
+h4 {
+	font-size: 1.414em;
+}
+
+h5 {
+	font-size: 1em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+ol,
+ul {
+    max-width: 750px;
+    margin: 0 auto 15px;
+}
+
+/* Custom Image Layout for the media module */
+img {
+	max-width: 100%;
+	height: auto !important;
+}
+
+p img.img__view_mode__bump_out {
+    margin: 30px 0;
+    max-width: 100vw;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    margin-left: 50%;
+}
+
+img.img__view_mode__full_width {
+	margin: 30px 0;
+}
+
+img.img__view_mode__align_left {
+	max-width: 50%;
+	height: auto !important;
+	float: left;
+	clear: both;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+img.img__view_mode__align_right {
+	max-width: 50%;
+	height: auto !important;
+	float: right;
+	clear: both;
+	margin-left: 20px;
+	margin-bottom: 20px;
+}
+
+/* Horizontal Rule */
+hr {
+	background: #ccc;
+	background: rgba(0,0,0,0.15);
+	margin: 30px auto;
+	clear: both;
+}
+
+/* Styles for Editor-Side Drupal-Entities */
+.entity {
+	background: #eee;
+	position: relative;
+	padding: 15px;
+}
+
+.cke_widget_selected .entity {
+	box-shadow: 0 0 0 3px #0782C1;
+}
+
+.cke_widget_selected .entity:before {
+	content: 'Right-click to edit entity';
+	font-style: italic;
+	color: #999;
+	font-size: 18px;
+	background: rgba(230,230,230,0.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.entity .field-items,
+.entity .field-type-image .item-list {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+}
+
+.entity h1,
+.entity h2,
+.entity h3,
+.entity h4,
+.entity h5,
+.entity h6 {
+	display: none;
+}
+
+.entity img {
+	max-width: 200px;
+	max-height: 200px;
+	margin: 5px;
+}
+
+.entity .field-type-image .field-label {
+	display: none;
+}
+
+.entity .field-slideshow {
+	max-height: 200px;
+}
+
+.field-slideshow-slide,
+.entity .field-type-image li {
+	display: inline-block;
+}
+
+/* Table Styles */
+table {
+    border: none;
+    border-spacing: 0;
+    -webkit-border-horizontal-spacing: 0;
+    -webkit-border-vertical-spacing: 0;
+}
+
+table td,
+table th {
+    border: 1px solid #ccc;
+    margin: 0;
+    padding: 5px 10px;
+}
+
+table thead th {
+    border-bottom: none;
+}
+
+table td:not(:first-child),
+table th:not(:first-child) {
+    border-left: none;
+}
+
+table tr:not(:first-child) td,
+table tr:not(:first-child) th {
+    border-top: none;
+}
