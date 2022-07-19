@@ -1,5 +1,5 @@
 (function ($) {
- 
+
 	Drupal.behaviors.scripts = {
 		attach: function (context, settings) {
 
@@ -44,11 +44,11 @@
 			//ADMIN MENU - DYNAMIC HEIGHT
 			var $admBody = $('body.admin-menu');
 
-			$(document).ready(function() { 
+			$(document).ready(function() {
 				setBodyMargin();
 			});
 
-			$(window).resize(function() { 
+			$(window).resize(function() {
 				setBodyMargin();
 			});
 
@@ -69,7 +69,7 @@
 
 
 
-			// RESPONSIVE ADMIN MENU -- Creates the responsive version of the admin menu 
+			// RESPONSIVE ADMIN MENU -- Creates the responsive version of the admin menu
 			$(window).load(function() {
 				responsiveAdmin();
 				$admBody.addClass("ev-admin-loaded");
@@ -246,7 +246,7 @@
 				browserBody.addClass('browser-firefox');
 			}
 
-			// Safari 3.0+ "[object HTMLElementConstructor]" 
+			// Safari 3.0+ "[object HTMLElementConstructor]"
 			var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || safari.pushNotification);
 
 			if (isSafari == true) {
@@ -300,7 +300,7 @@
 					if (type == '1') {
 						gallery.css('display', 'block');
 						textArea.css('display', 'none');
-					} 
+					}
 					// display the text area
 					else if (type == '2') {
 						gallery.css('display', 'none');
@@ -331,7 +331,7 @@
 	            $("#edit-field-studioevent-studio-street-und-0-value").val($(".views-field-street-address #street_address").text());
 	            $("#edit-field-studioevent-studio-zip-und-0-value").val($(".views-field-postal-code #zip_code").text());
 	            $("#edit-field-studioevent-studio-cross-und-0-value").val($(".views-field-supplemental-address-1 #cross_street").text());
-	            
+
 	            var studio_value = $(".views-field-current-employer #group_studio").text();
 
 	            $('#edit-field-studioevent-contact-und option:contains(' + studio_value + ')').each(function(){
@@ -344,5 +344,5 @@
 	        } //END pull in custom address data
 		}
 	};
- 
+
 }(jQuery));
