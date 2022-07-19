@@ -333,14 +333,15 @@
 	            $("#edit-field-studioevent-studio-cross-und-0-value").val($(".views-field-supplemental-address-1 #cross_street").text());
 
 	            var studio_value = $(".views-field-current-employer #group_studio").text();
-
-	            $('#edit-field-studioevent-contact-und option:contains(' + studio_value + ')').each(function(){
-	                if ($(this).text() == studio_value) {
-	                    $(this).attr('selected', 'selected');
-	                    return false;
-	                }
-	                return true;
-    			});
+	            if (studio_value) {
+					$('#edit-field-studioevent-contact-und option:contains(' + studio_value + ')').each(function(){
+						if ($(this).text() == studio_value) {
+							$(this).attr('selected', 'selected');
+							return false;
+						}
+						return true;
+					});
+				}
 	        } //END pull in custom address data
 		}
 	};
